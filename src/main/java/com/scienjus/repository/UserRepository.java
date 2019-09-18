@@ -9,6 +9,7 @@ import org.springframework.data.repository.CrudRepository;
  * @author ScienJus
  * @date 2015/7/10.
  */
+//spring无法根据此接口的bean类型创建有效的bean
 public interface UserRepository extends CrudRepository<User, Long> {
 
     public User findByUsername(String username);
